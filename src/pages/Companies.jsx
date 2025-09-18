@@ -10,7 +10,7 @@ import { Building2, MapPin, Users, Briefcase, Search, Plus } from "lucide-react"
 import { useState } from "react";
 
 const Companies = () => {
-  const [view, setView] = useState<"register" | "list">("list");
+  const [view, setView] = useState("list");
 
   const companies = [
     {

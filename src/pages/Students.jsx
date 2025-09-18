@@ -11,7 +11,7 @@ import { Users, MapPin, BookOpen, Award, Search, Filter } from "lucide-react";
 import { useState } from "react";
 
 const Students = () => {
-  const [view, setView] = useState<"register" | "list">("list");
+  const [view, setView] = useState("list");
 
   const students = [
     {
