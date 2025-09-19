@@ -1,30 +1,76 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import Header from "@/components/Header";
-import { Users, Building2, Brain, TrendingUp, MapPin, Award, Clock, Target } from "lucide-react";
+import Footer from "@/components/Footer";
+import {
+  Users,
+  Building2,
+  Brain,
+  TrendingUp,
+  MapPin,
+  Award,
+  Clock,
+  Target,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
   const stats = [
-    { title: "Total Applications", value: "12,847", icon: Users, trend: "+12%" },
-    { title: "Active Companies", value: "2,156", icon: Building2, trend: "+8%" },
+    {
+      title: "Total Applications",
+      value: "12,847",
+      icon: Users,
+      trend: "+12%",
+    },
+    {
+      title: "Active Companies",
+      value: "2,156",
+      icon: Building2,
+      trend: "+8%",
+    },
     { title: "Successful Matches", value: "8,923", icon: Brain, trend: "+15%" },
     { title: "Match Accuracy", value: "94.2%", icon: Target, trend: "+2.1%" },
   ];
 
   const recentMatches = [
-    { student: "Rajesh Kumar", company: "TCS", location: "Bangalore", match: 96 },
-    { student: "Priya Singh", company: "ONGC", location: "Dehradun", match: 94 },
-    { student: "Amit Sharma", company: "Indian Railways", location: "Delhi", match: 92 },
-    { student: "Sneha Patel", company: "Infosys", location: "Hyderabad", match: 90 },
+    {
+      student: "Rajesh Kumar",
+      company: "TCS",
+      location: "Bangalore",
+      match: 96,
+    },
+    {
+      student: "Priya Singh",
+      company: "ONGC",
+      location: "Dehradun",
+      match: 94,
+    },
+    {
+      student: "Amit Sharma",
+      company: "Indian Railways",
+      location: "Delhi",
+      match: 92,
+    },
+    {
+      student: "Sneha Patel",
+      company: "Infosys",
+      location: "Hyderabad",
+      match: 90,
+    },
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
       <Header />
-      
+
       <main className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <div className="mb-8">
@@ -33,11 +79,12 @@ const Index = () => {
               AI-Powered Smart Allocation Engine
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Revolutionizing the PM Internship Scheme with intelligent matching algorithms that consider skills, 
-              qualifications, location preferences, and affirmative action requirements.
+              Revolutionizing the PM Internship Scheme with intelligent matching
+              algorithms that consider skills, qualifications, location
+              preferences, and affirmative action requirements.
             </p>
           </div>
-          
+
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <Link to="/students">
               <Button size="lg" className="gap-2">
@@ -99,7 +146,10 @@ const Index = () => {
             <CardContent>
               <div className="space-y-4">
                 {recentMatches.map((match, index) => (
-                  <div key={index} className="flex items-center justify-between p-3 rounded-lg border">
+                  <div
+                    key={index}
+                    className="flex items-center justify-between p-3 rounded-lg border"
+                  >
                     <div className="flex-1">
                       <div className="font-medium">{match.student}</div>
                       <div className="text-sm text-muted-foreground flex items-center gap-1">
@@ -109,7 +159,10 @@ const Index = () => {
                         {match.location}
                       </div>
                     </div>
-                    <Badge variant="secondary" className="bg-success/10 text-success">
+                    <Badge
+                      variant="secondary"
+                      className="bg-success/10 text-success"
+                    >
                       {match.match}% Match
                     </Badge>
                   </div>
@@ -154,11 +207,15 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-4 mt-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">24.5h</div>
-                  <div className="text-sm text-muted-foreground">Avg. Processing Time</div>
+                  <div className="text-sm text-muted-foreground">
+                    Avg. Processing Time
+                  </div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-success">97.8%</div>
-                  <div className="text-sm text-muted-foreground">Student Satisfaction</div>
+                  <div className="text-sm text-muted-foreground">
+                    Student Satisfaction
+                  </div>
                 </div>
               </div>
             </CardContent>
@@ -179,24 +236,34 @@ const Index = () => {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <Link to="/matching">
-                <Button variant="outline" className="h-20 w-full flex flex-col gap-2">
+                <Button
+                  variant="outline"
+                  className="h-20 w-full flex flex-col gap-2"
+                >
                   <Brain className="h-6 w-6" />
                   Run Matching Algorithm
                 </Button>
               </Link>
               <Link to="/admin">
-                <Button variant="outline" className="h-20 w-full flex flex-col gap-2">
+                <Button
+                  variant="outline"
+                  className="h-20 w-full flex flex-col gap-2"
+                >
                   <Award className="h-6 w-6" />
                   Review Allocations
                 </Button>
               </Link>
-              <Button variant="outline" className="h-20 w-full flex flex-col gap-2">
+              <Button
+                variant="outline"
+                className="h-20 w-full flex flex-col gap-2"
+              >
                 <TrendingUp className="h-6 w-6" />
                 Generate Reports
               </Button>
             </div>
           </CardContent>
         </Card>
+        <Footer />
       </main>
     </div>
   );
