@@ -1,4 +1,5 @@
 {
+  "_comment": "This file configures component aliases and UI settings. Comments are not supported in standard JSON, so use this field for notes.",
   "$schema": "https://ui.shadcn.com/schema.json",
   "style": "default",
   "rsc": false,
