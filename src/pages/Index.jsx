@@ -16,9 +16,9 @@ const Index = () => {
 
   const recentMatches = [
     { student: "Rajesh Kumar", company: "TCS", location: "Bangalore", match: 96 },
-    { student: "Priya Singh", company: "Infosys", location: "Hyderabad", match: 94 },
-    { student: "Amit Sharma", company: "Wipro", location: "Pune", match: 92 },
-    { student: "Sneha Patel", company: "HCL", location: "Chennai", match: 90 },
+    { student: "Priya Singh", company: "ONGC", location: "Dehradun", match: 94 },
+    { student: "Amit Sharma", company: "Indian Railways", location: "Delhi", match: 92 },
+    { student: "Sneha Patel", company: "Infosys", location: "Hyderabad", match: 90 },
   ];
 
   return (

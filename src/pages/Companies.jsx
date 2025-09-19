@@ -42,6 +42,36 @@ const Companies = () => {
       filled: 89,
       requirements: ["B.Tech Mechanical", "B.E. Automobile"],
       status: "Active"
+    },
+    {
+      id: 4,
+      name: "Bharat Electronics Limited",
+      sector: "Electronics & Defense",
+      location: "Bangalore, Ghaziabad, Pune",
+      capacity: 300,
+      filled: 210,
+      requirements: ["B.Tech", "B.E. Electronics", "M.Sc Physics"],
+      status: "Active"
+    },
+    {
+      id: 5,
+      name: "Oil and Natural Gas Corporation (ONGC)",
+      sector: "Oil & Gas",
+      location: "Dehradun, Mumbai, Ahmedabad",
+      capacity: 250,
+      filled: 180,
+      requirements: ["B.Tech Petroleum", "B.E. Chemical", "M.Sc Geology"],
+      status: "Active"
+    },
+    {
+      id: 6,
+      name: "Indian Railways",
+      sector: "Transport & Infrastructure",
+      location: "Delhi, Kolkata, Chennai",
+      capacity: 400,
+      filled: 320,
+      requirements: ["B.Tech Civil", "B.E. Mechanical"],
+      status: "Active"
     }
   ];
 

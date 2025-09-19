@@ -29,13 +29,13 @@ const Matching = () => {
     },
     {
       student: "Priya Singh",
-      company: "Infosys",
+      company: "ONGC",
       score: 94,
       factors: ["Skills: 92%", "Location: 88%", "Diversity: 100%"]
     },
     {
       student: "Amit Sharma",
-      company: "Wipro",
+      company: "Infosys",
       score: 92,
       factors: ["Skills: 88%", "Location: 95%", "Diversity: 90%"]
     }

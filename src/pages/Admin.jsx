@@ -20,18 +20,18 @@ const Admin = () => {
     {
       id: 2,
       student: "Priya Singh",
-      company: "Infosys",
+      company: "ONGC",
       matchScore: 94,
-      location: "Hyderabad",
+      location: "Dehradun",
       category: "OBC",
       status: "pending"
     },
     {
       id: 3,
       student: "Amit Sharma",
-      company: "Wipro",
+      company: "Infosys",
       matchScore: 92,
-      location: "Pune",
+      location: "Hyderabad",
       category: "General",
       status: "pending"
     }
